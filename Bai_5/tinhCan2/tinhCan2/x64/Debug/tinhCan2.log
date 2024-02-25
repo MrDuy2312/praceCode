@@ -1,0 +1,4 @@
+﻿  mainCan2.c
+E:\Homework\Bai_5\tinhCan2\tinhCan2\mainCan2.c(17,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\Homework\Bai_5\tinhCan2\tinhCan2\mainCan2.c(15,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  tinhCan2.vcxproj -> E:\Homework\Bai_5\tinhCan2\x64\Debug\tinhCan2.exe
