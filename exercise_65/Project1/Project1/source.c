@@ -1,5 +1,6 @@
 ﻿#include<stdio.h>
 #include<math.h>
+#include<stdbool.h>
 //giai phuong trinh bac 2 : ax^2 + bx + c = 0
 
 int nhapThamSo() {
@@ -8,12 +9,24 @@ int nhapThamSo() {
 	scanf_s("%d", &_Num);
 	return _Num;
 }
+bool kiemTraSo(float a, float b, float c) {
+	if (a == 0 && b == 0 && c == 0) {
+		return false;
+	}
+	if (a == 0 && b == 0) {
+		return false;
+	}
+	return true;
+}
 int giaiPhuongTrinh(float a, float b, float c) {
 	//a = 0 => bx + c = 0
 
 	if (a == 0) {
 		if (b == 0) {
-			printf("a = 0, b = 0 thi x = vo cuc\n");
+			printf("a = 0, b = 0 thi vo nghiem\n");
+			if (c = 0) {
+				printf("nghiem la vo cuc trong R");
+			}
 		}
 		else if (b != 0) {
 			float _trungGian = (float) - c / b;
@@ -43,7 +56,7 @@ int giaiPhuongTrinh(float a, float b, float c) {
 	return 0;
 }
 int main() {
-	int a, b, c;
+	float a, b, c;
 	a = nhapThamSo();
 	b = nhapThamSo();
 	c = nhapThamSo();
